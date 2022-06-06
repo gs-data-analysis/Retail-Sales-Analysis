@@ -6,7 +6,6 @@ import plost
 #import matplotlib.pyplot as plt
 #matplotlib inline
 
-import seaborn as sns
 
 
 st.set_page_config(page_title="Dashboard", page_icon=":tada:", layout="wide")
