@@ -9,13 +9,13 @@ import plost
 import seaborn as sns
 
 
-st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Dashboard", page_icon=":tada:", layout="wide")
 st.title("Retail Sales Analytics for store XYZ")
 
-#df = pd.read_csv('https://github.com/gs-data-analysis/Retail-Sales-Analysis/blob/main/pos4.csv',error_bad_lines=False)
 
+df = pd.read_csv("https://raw.githubusercontent.com/gs-data-analysis/Retail-Sales-Analysis/main/sales_data.csv",error_bad_lines=False)
 
-df = pd.read_csv("/Users/ramya/pos4.csv",error_bad_lines=False)
+#df = pd.read_csv("/Users/ramya/pos4.csv",error_bad_lines=False)
 df[["create_date","write_date"]]=df[["create_date","write_date"]].apply(pd.to_datetime)
 df[["name","full_product_name"]]=df[["name","full_product_name"]].astype('string')
 
